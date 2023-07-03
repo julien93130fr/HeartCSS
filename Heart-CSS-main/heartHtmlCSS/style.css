@@ -1,0 +1,49 @@
+/* Appliquer des styles de réinitialisation */
+*
+{
+    margin: 0;
+    top: 0;
+    box-sizing:border-box ;
+}
+
+/* Styling du corps de la page */
+body
+{
+    height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* Carré en forme de cœur */
+.heart-square
+{
+    width: 300px;
+    height: 300px;
+    background-color: #f03a17;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+/* Cercle en forme de cœur */
+.heart-circle
+{
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+    background-color: #f03a17;
+    position: absolute;
+
+}
+
+ /* Positionnement du premier cercle en haut */
+.heart-circle:nth-of-type(1)
+{
+    top: -50%;
+}
+
+/* Positionnement du deuxième cercle à gauche */
+.heart-circle:nth-of-type(2)
+{
+    left: -50%;
+}
